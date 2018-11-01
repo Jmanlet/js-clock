@@ -1,6 +1,7 @@
+<!–– Made by Harry Dunning ––> 
 <html>
    <head>
-      <title>Stage Crew - Clock</title>
+      <title>Stage Crew Low Profile Clock</title>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="icon" 
          type="image/ico" 
@@ -16,7 +17,9 @@
       </style>
    </head>
    <body>
-      <button class="fsbutton" onclick="close_window()"><i class="fa fa-power-off" style="font-size:24px;color:red"></i></button> <button class="fsbutton" onclick="fullscreen()"><i class="fa fa-window-maximize" style="font-size:24px;color:white"></i></button>
+      <button class="fsbutton" onclick="closetab()"><i class="fa fa-power-off" style="font-size:24px;color:red"></i></button>
+	  <button class="fsbutton" onclick="fullscreen()"><i class="fa fa-window-maximize" style="font-size:24px;color:white"></i></button>
+	  <button class="fsbutton" onclick="credits()"><i class="fa fa-info" style="font-size:24px;color:white"></i></button>
       <div align="center">
          <br><br>
          <iframe src="http://free.timeanddate.com/clock/i6helb97/n47/tlau/fs48/fcfff/tct/pct/ftb/tt0/tb4" frameborder="0" width="726" height="111" allowTransparency="true"></iframe>
@@ -44,8 +47,12 @@
         }  
       }
       
-      function close_window() {
+      function closetab() {
           close();
       }
+
+      function credits() {
+          alert("Stage Crew Low Profile Clock\n----------------------------------\nCreated by: Harry Dunning\nAPI: timeanddate.com");
+      }	  
    </script>
 </html>
