@@ -1,0 +1,82 @@
+<!-- Made by H. Dunning -->
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript Clock by Dunning</title> <link rel="icon" type="image/ico" href="icon.ico">
+<script>
+function display(){var e=new Date,r=e.getHours(),a=e.getMinutes(),t=e.getSeconds(),n=r>=12?"PM":"AM";r%=12,r=r?r:12,a=checkTime(a),t=checkTime(t);var y=new Array(7);y[0]="Sunday",y[1]="Monday",y[2]="Tuesday",y[3]="Wednesday",y[4]="Thursday",y[5]="Friday",y[6]="Saturday";var u=y[e.getDay()];year=e.getFullYear(),d=e.getDate();var c=new Array(12);c[0]="Janurary",c[1]="Feburary",c[2]="March",c[3]="April",c[4]="May",c[5]="June",c[6]="July",c[7]="August",c[8]="September",c[9]="October",c[10]="November",c[11]="December";var i=c[e.getMonth()];document.getElementById("date").innerHTML=u+", "+d+" "+i+" "+year,document.getElementById("clock").innerHTML=r+":"+a+":"+t+" "+n;setTimeout(display,100)}
+function checkTime(e){return 10>e&&(e="0"+e),e}
+function fullscreen(){var e=document.createElement("img"),A="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAI1JREFUeNrsV0EOwCAI6w/8/6lP8gk8ZTuPLUoirltCEy8mpY0iIAAcg0WsgxONreIRE4+bhnzYr05AkgO2wQQHV3wxwAmBieJe6xY8w0Q0BlcDZHOngXqA1zPziE68BTjNmWDGM4qKexNEoVAoJPVzWSGSlmJpM3q1HcsHEvlI9omhtL5m9TWT5cApwAD/IigEZttSgAAAAABJRU5ErkJggg==",t="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgBAMAAACBVGfHAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABVQTFRFAAAAAAAAAAAAAAAAAAAAAAAAAAAAEgEApAAAAAZ0Uk5TAA+fz9/vpTOW9gAAAJNJREFUKM/NkkEKwyAUBSeeQOoFDAX3duERcoQcQJN3/yN08RVLUui2fyE4Ph/IyPLiY56eoDj3TpmiOkFSI2lEPE6qtgSA3A+TtBaA9pAq4KRTANr77SQZUO93E1j9sg9wegDCTGQAygTN80fz+3FsAxx8T1w7nHQY2CySpJgAqpMq3QVANA3mwo/6eld5k339Dm89PDdxiEGVaQAAAABJRU5ErkJggg==";e.src=A,e.id="fsicon",e.style.opacity=1,e.style.filter="invert(100%)",e.style.cursor="pointer",e.style.zIndex=2e3,e.style.top="10px",e.style.right="10px",e.style.position="fixed",e.style.height="25px",e.style.width="25px",document.body.appendChild(e);var e=document.getElementById("fsicon");e&&e.addEventListener("click",function(){if(e.getAttribute("src")!=t){var A=document.documentElement;A.requestFullscreen?A.requestFullscreen():A.mozRequestFullScreen?A.mozRequestFullScreen():A.webkitRequestFullScreen&&A.webkitRequestFullScreen()}else document.exitFullscreen?document.exitFullscreen():document.mozCancelFullScreen?document.mozCancelFullScreen():document.webkitCancelFullScreen&&document.webkitCancelFullScreen()},!1),e&&(document.addEventListener("fullscreenchange",function(){document.fullscreenElement?e.setAttribute("src",t):e.setAttribute("src",A)},!1),document.addEventListener("mozfullscreenchange",function(){document.mozFullScreen?e.setAttribute("src",t):e.setAttribute("src",A)},!1),document.addEventListener("webkitfullscreenchange",function(){document.webkitIsFullScreen?e.setAttribute("src",t):e.setAttribute("src",A)},!1))}
+'use strict'; document.addEventListener('keypress', (event) => {const keyName = event.key; window.open ('index.html','_self',false);});
+</script>
+<style>@keyframes bgcolor{0%{background-color:#45a3e5}30%{background-color:#66bf39}60%{background-color:#eb670f}90%{background-color:#f35}100%{background-color:#864cbf}} body,html{-webkit-animation:bgcolor 2s infinite;animation:bgcolor 1s infinite;-webkit-animation-direction:alternate;animation-direction:alternate;font-family:Arial,sans-serif;-background:url(bg1.png) no-repeat center center fixed;background-size:cover}.stuff{position:absolute;left:50%;top:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)} .stuff2{position:absolute;left:3%;bottom:3%}
+#wrapper {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    right: 50px;
+    margin: auto;
+}
+#logo1 {
+    height: 150px;
+    width: 500px;
+    background-image: url("logo.jpg");
+    position: absolute;
+    bottom: 0;
+	left: 0;
+    animation: animate 0.1s linear 0s infinite alternate;
+}
+
+#logo2 {
+    height: 150px;
+    width: 500px;
+    background-image: url("logo.jpg");
+    position: absolute;
+    bottom: -100;
+	left: 0;
+    animation: animate2 0.1s linear 0s infinite alternate;
+}
+
+#logo3 {
+    height: 150px;
+    width: 500px;
+    background-image: url("logo.jpg");
+    position: absolute;
+    bottom: 0;
+	left: 50%;
+    animation: animate3 0.1s linear 0s infinite alternate;
+}
+
+#logo4 {
+    height: 150px;
+    width: 500px;
+    background-image: url("logo.jpg");
+    position: absolute;
+    bottom: 0;
+	left: 20%;
+    animation: animate4 0.1s linear 0s infinite alternate;
+}
+@keyframes animate {
+    from { left: 100%; }
+    to { left: 0; }
+}
+
+@keyframes animate2 {
+    from { left: 0; }
+    to { left: 100%; }
+}
+
+@keyframes animate3 {
+    from { bottom: 100%; }
+    to { bottom: 0; }
+}
+
+@keyframes animate4 {
+    from { bottom: 0; }
+    to { bottom: 100%; }
+}
+</style>
+<body onload="display(); fullscreen()" bgcolor="000000"><div id="wrapper"><div id="logo1"></div><div id="logo2"></div><div id="logo3"></div><div id="logo4"></div></div><div style="text-align:center" class="stuff"><div style="font-size:100px;color:white" id="clock"></div><div style="font-size:30px;color:white" id="date"></div></div><i style="font-size:25px;color:white" class="stuff2"><s>Churchie Production Crew</s> Evolution Productions</i></body>
+</html>
