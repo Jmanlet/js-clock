@@ -10,7 +10,7 @@ This clock is made completely with javascript and gets the time of you local com
 
 # New Features!
 
-  - Rainbow fun mode toggle (via and key at this time)
+  - Toggle Rainbow mode (via and key at this time)
 
 ### Credits
 
