@@ -1,6 +1,6 @@
 # JavaScript Clock
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)]
+![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)
 
 This clock is made completely with javascript and gets the time of you local computer allowing you to use it offline.
 
