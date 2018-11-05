@@ -7,6 +7,10 @@ This clock is made completely with javascript and gets the time of you local com
   - Customisable Background
   - Free
   - No API key required!
+  
+  
+  ### Demo Website
+  http://manlet.me/js-clock/
 
 # New Features!
 
