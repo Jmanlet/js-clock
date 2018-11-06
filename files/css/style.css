@@ -1,0 +1,32 @@
+/* Made by H.Dunning */
+
+body,html {
+    font-family:Arial,sans-serif;
+    background-color: #000000; /* Change to you liking [Syntax: #RRGGBB] */
+    color:#ffffff; /* Change to you liking [Syntax: #RRGGBB] */
+    background-size:cover
+}
+
+.middle {
+    text-align:center;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%)
+}
+
+.bottomright {
+    position:absolute;
+    left:3%;
+    bottom:3%;
+    font-size:25px;
+}
+
+.time {
+    font-size:100px;
+}
+
+.date {
+    font-size:30px;
+}
+
