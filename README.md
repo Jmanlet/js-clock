@@ -8,7 +8,6 @@ This clock is made completely with javascript and gets the time of you local com
   - Free
   - No API key required!
   
-  
   ### Demo Website
   http://hndunning.github.io/js-clock/
 
@@ -22,8 +21,10 @@ This clock is made completely with javascript and gets the time of you local com
 * [MattSMR] - helped me fix some of my shitty code lmao
 
 ### Installation
+https://github.com/hndunning/js-clock/releases/latest
 
-Download repo and customise to you liking lmao
+1. Download repo 
+2. Customise to you liking 
 
 
 ### Development
