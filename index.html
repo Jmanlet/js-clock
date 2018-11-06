@@ -12,6 +12,10 @@
          <div class="time" id="time"></div>
          <div class="date" id="date"></div>
       </div>
-      <i class="bottomright">Churchie Stage Crew</i>
+      <i class="bottomright" id="label" onclick="changeText()">Churchie Stage Crew</i>
    </body>
+   <script>
+      function changeText()
+         document.getElementById("label").innerText = prompt("What should the text be changed to?");
+   </script>
 </html>
