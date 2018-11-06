@@ -10,7 +10,7 @@ This clock is made completely with javascript and gets the time of you local com
   
   
   ### Demo Website
-  http://manlet.me/js-clock/
+  http://hndunning.github.io/js-clock/
 
 # New Features!
 
