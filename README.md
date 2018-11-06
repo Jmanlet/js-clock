@@ -14,7 +14,7 @@ This clock is made completely with javascript and gets the time of you local com
 
 # New Features!
 
-  - Toggle Rainbow mode (via and key at this time)
+  - none atm
 
 ### Credits
 
