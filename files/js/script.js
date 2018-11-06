@@ -1,4 +1,8 @@
-// Made by H. Dunning
+// Made by H. Dunning & MattSMR
+
+function changeText() {
+	document.getElementById("label").innerText = prompt("What should the text be changed to?");
+}
 
 function display() {
 	var e = new Date,
