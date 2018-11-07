@@ -13,7 +13,7 @@ This clock is made completely with javascript and gets the time of you local com
 
 # New Features!
 
-  - none atm
+  - Customisable Label (in bottom left)
 
 ### Credits
 
