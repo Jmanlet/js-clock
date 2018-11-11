@@ -14,6 +14,7 @@ This clock is made completely with javascript and gets the time of you local com
 # New Features!
 
   - Customisable Label (in bottom left)
+  - Background changer
 
 ### Credits
 
