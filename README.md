@@ -1,6 +1,6 @@
 # JavaScript Clock
 
-[![Build Status](https://travis-ci.org/hndunning/js-clock.png?branch=master)](https://travis-ci.org/hndunning/js-clock) [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues) [![HitCount](http://hits.dwyl.io/hndunning/js-clock.svg)](http://hits.dwyl.io/hndunning/js-clock)
+[![Build Status](https://api.travis-ci.org/hndunning/js-clock.svg?branch=master)](https://travis-ci.org/hndunning/js-clock) [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues) [![HitCount](http://hits.dwyl.io/hndunning/js-clock.svg)](http://hits.dwyl.io/hndunning/js-clock)
 
 
 
