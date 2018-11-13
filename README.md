@@ -1,6 +1,7 @@
 # JavaScript Clock
 
-[![Build Status](https://travis-ci.org/hndunning/js-clock.png?branch=master)](https://travis-ci.org/hndunning/js-clock.png)
+[![Build Status](https://travis-ci.org/hndunning/js-clock.png?branch=master)](https://travis-ci.org/hndunning/js-clock) ## Contributing [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
+
 
 This clock is made completely with javascript and gets the time of you local computer allowing you to use it offline.
 
