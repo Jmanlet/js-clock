@@ -1,6 +1,1 @@
-{
-  "os": "windows",
-  "dist": "trusty",
-  "group": "stable",
-  "language": "javascript"
-}
+language: html
