@@ -1,6 +1,8 @@
 // Made by H. Dunning & MattSMR
 
 function changeText() {
+    var l = document.getElementById("label").innerText;
+    setLabel("customlabel", l, "365");
     document.getElementById("label").innerText = prompt("What should the text be changed to?");
 }
 
