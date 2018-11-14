@@ -1,8 +1,7 @@
 // Made by H. Dunning & MattSMR
 
 function changeText() 
-    document.getElementById("label").innerText = prompt("What should the text be changed to?");
-    setLabel("label", document.getElementById("label").innerText, "365")
+    document.getElementById("label").innerText = prompt("What should the text be changed to?")
 }
 
 function setLabel(cname, cvalue, exdays) {
