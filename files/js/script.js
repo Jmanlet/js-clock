@@ -37,9 +37,7 @@ function checkCookie() {
 }
 
 function changeText() {
-    var clabel = document.getElementById("label").innerText;
-    document.getElementById("label").innerText = prompt("What should the text be changed to?");
-    document.cookie = clabel;
+    document.getElementById("label").innerText = prompt("Enter Custom Label:");
 
 }
 
