@@ -1,7 +1,15 @@
 // Made by H. Dunning & MattSMR
 
 function changeText() {
-	document.getElementById("label").innerText = prompt("What should the text be changed to?");
+	var label = document.getElementById("label").innerText;
+	 label = prompt("What should the text be changed to?");
+}
+
+function setLabel(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires="+ d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
 
 function bgColour() {
