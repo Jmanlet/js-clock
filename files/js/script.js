@@ -1,9 +1,7 @@
 // Made by H. Dunning & MattSMR
 
-function changeText()
-    var z = document.getElementById("label").innerText
+function changeText() {
     document.getElementById("label").innerText = prompt("What should the text be changed to?");
-    setLabel("customlabel", z, "365")
 }
 
 function setLabel(cname, cvalue, exdays) {
