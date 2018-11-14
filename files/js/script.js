@@ -1,7 +1,8 @@
 // Made by H. Dunning & MattSMR
 
-function changeText() 
-    document.getElementById("label").innerText = prompt("What should the text be changed to?")
+function changeText()
+    document.getElementById("label").innerText = prompt("What should the text be changed to?");
+    setLabel("label", document.getElementById("label").innerText, "365")
 }
 
 function setLabel(cname, cvalue, exdays) {
@@ -84,3 +85,4 @@ document.addEventListener('keypress', (event) => {
 	window.open('test.html', '_self', false);
 });
 */
+		  
