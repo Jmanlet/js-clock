@@ -1,5 +1,41 @@
 // Made by H. Dunning & MattSMR
 
+function setCookie(cname,cvalue,exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires=" + d.toGMTString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+
+function checkCookie() {
+    var user=getCookie("customlabel1");
+    if (user != "") {
+       document.getElementById("label").innerText = user;
+    } else {
+       user = prompt("Enter Custom Label:","");
+       if (user != "" && user != null) {
+           setCookie("customlabel1", user, 30);
+           document.getElementById("label").innerText = user;
+       }
+    }
+}
+
 function changeText() {
     var clabel = document.getElementById("label").innerText;
     document.getElementById("label").innerText = prompt("What should the text be changed to?");
