@@ -1,6 +1,6 @@
 # JavaScript Clock
 
-[![Build Status](https://api.travis-ci.org/hndunning/js-clock.svg?branch=master)](https://travis-ci.org/hndunning/js-clock) [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues) [![HitCount](http://hits.dwyl.io/hndunning/js-clock.svg)](http://hits.dwyl.io/hndunning/js-clock)
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues) [![HitCount](http://hits.dwyl.io/hndunning/js-clock.svg)](http://hits.dwyl.io/hndunning/js-clock)
 
 
 
@@ -9,19 +9,19 @@ This clock is made completely with javascript and gets the time of you local com
   - Customisable Background
   - Free
   - No API key required!
+  - Background Changer
+  - Customisable Label (in bottom left)
   
   ### Demo Website
   http://hndunning.github.io/js-clock/
 
 # New Features!
-
-  - Customisable Label (in bottom left)
-  - Background changer
+  - Customisable Label now saves text (via cookies)  
 
 ### Credits
 
 * [hndunning] - Concept and intial webpage
-* [MattSMR] - helped me fix some of my shitty code lmao
+* [MattSMR] - helped me with a few things
 
 ### Installation
 https://github.com/hndunning/js-clock/releases/latest
