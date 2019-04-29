@@ -24,13 +24,13 @@ function getCookie(cname) {
 }
 
 function checkCookie() {
-    var user=getCookie("customlabel1");
+    var user=getCookie("userlabel");
     if (user != "") {
        document.getElementById("label").innerText = user;
     } else {
        user = prompt("Enter Custom Label:","");
        if (user != "" && user != null) {
-           setCookie("customlabel1", user, 30);
+           setCookie("userlabel", user, 30);
            document.getElementById("label").innerText = user;
        }
     }
@@ -38,7 +38,7 @@ function checkCookie() {
 
 function changeText() {
    user = prompt("Enter Custom Label:","");
-   setCookie("customlabel1", user, 30);
+   setCookie("userlabel", user, 30);
    document.getElementById("label").innerText = user;
 
 }
@@ -65,6 +65,32 @@ function bgColour() {
     selectedColour = colours[Math.floor(Math.random() * colours.length)]
     document.body.style.backgroundColor = selectedColour;
 
+}
+
+var colorWell;
+var defaultColor = "#000000";
+
+window.addEventListener("load", startup, false);
+function startup() {
+  colorWell = document.querySelector("#colorWell");
+  colorWell.value = defaultColor;
+  colorWell.addEventListener("input", updateFirst, false);
+  colorWell.addEventListener("change", updateAll, false);
+  colorWell.select();
+}
+
+function updateFirst(event) {
+  var p = document.querySelector("body");
+
+  if (p) {
+    document.body.style.backgroundColor = event.target.value;
+  }
+}
+
+function updateAll(event) {
+  document.querySelectorAll("body").forEach(function(p) {
+    document.body.style.backgroundColor = event.target.value;
+  });
 }
 
 function display() {
